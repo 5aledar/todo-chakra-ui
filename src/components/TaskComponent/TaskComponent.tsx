@@ -33,7 +33,7 @@ const TaskComponent = ({ task }: Props) => {
 
       <AccordionItemContent display="flex" justifyContent="space-between" alignItems="end">
 
-        <Text color={task.status ? 'green.500' : 'black'}>
+        <Text color={'black'}>
           {task.description}
         </Text>
 

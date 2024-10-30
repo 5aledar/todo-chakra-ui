@@ -40,7 +40,7 @@ const Home = () => {
     return (
         <Box background="gray" width="100vw" overflow="hidden" height="100vh" display="flex" flexDirection="column" justifyContent="flex-start" alignItems="center" gap={5}>
             <Box>
-                <AccordionRoot w={500} collapsible background="whiteAlpha.800" margin="auto" paddingInline={10} borderRadius={10} marginTop={100}>
+                <AccordionRoot w={500}  collapsible background="whiteAlpha.800" margin="auto" paddingInline={10} borderRadius={10} marginTop={100}>
                     {tasks.map((task) => (
                         <TaskComponent task={task} key={task.id} />
                     ))}
@@ -48,7 +48,7 @@ const Home = () => {
             </Box>
 
             <Box display="flex" justifyContent="space-between" alignItems="center" flexDirection="column" gap={5}>
-                <Box display={addnewTask ? 'flex' : 'none'} justifyContent="space-between" gap={3} flexDirection="column" alignItems="center" background="white" width={500} padding={10} borderRadius={10}>
+                <Box display={addnewTask ? 'flex' : 'none'} justifyContent="space-between" gap={3} flexDirection="column" alignItems="center" background="white" width={500} padding={10} color={'black'} borderRadius={10}>
                     <Field label="Title">
                         <Input
                             name="title"
